@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
    $element = "<b>$text</b>";
    echo ('Text : ' .$element);
    
-   $conn = new mysqli('localhost', 'sirajju', '242424', 'test');
+   $conn = new mysqli('10.0.14.23', 'sirajju', '242424', 'test');
    
    if ($conn->connect_errno) {
       die('connect to db failed');
